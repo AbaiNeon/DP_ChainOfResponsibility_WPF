@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="721">
+    <Grid>
+        <Label Content="Оператор1" HorizontalAlignment="Left" Margin="43,32,0,0" VerticalAlignment="Top"/>
+        <Label Content="Оператор2" HorizontalAlignment="Left" Margin="151,32,0,0" VerticalAlignment="Top"/>
+        <Label Content="Оператор3&#xD;&#xA;" HorizontalAlignment="Left" Margin="247,32,0,0" VerticalAlignment="Top"/>
+        <Label Content="Обработанные&#xA;" HorizontalAlignment="Left" Margin="506,60,0,0" VerticalAlignment="Top" Height="28"/>
+        <ListBox Name="listHandled" HorizontalAlignment="Left" Height="120" Margin="506,93,0,0" VerticalAlignment="Top" Width="122"/>
+        <Button Name="btnGenerateRequest" Content="Генерировать запрос&#xD;&#xA;" HorizontalAlignment="Left" Margin="151,351,0,0" VerticalAlignment="Top" Width="147" Click="BtnGenerateRequestClick"/>
+        <ListBox Name="listOperator1" HorizontalAlignment="Left" Height="120" Margin="43,107,0,0" VerticalAlignment="Top" Width="71"/>
+        <ListBox Name="listOperator2" HorizontalAlignment="Left" Height="120" Margin="151,107,0,0" VerticalAlignment="Top" Width="71"/>
+        <ListBox Name="listOperator3" HorizontalAlignment="Left" Height="120" Margin="247,107,0,0" VerticalAlignment="Top" Width="71"/>
+        <Button Name="btnHandleOp1" Content="Обработать запрос" HorizontalAlignment="Left" Margin="22,63,0,0" VerticalAlignment="Top" Width="113" Height="25" Click="BtnHandleOp1Click"/>
+        <Button Name="btnHandleOp2" Content="Обработать запрос" HorizontalAlignment="Left" Margin="140,63,0,0" VerticalAlignment="Top" Width="92" Height="25"/>
+        <Button Name="btnHandleOp3" Content="Обработать запрос" HorizontalAlignment="Left" Margin="237,63,0,0" VerticalAlignment="Top" Width="94" Height="25"/>
+        <ListBox x:Name="listUnhandled" HorizontalAlignment="Left" Height="120" Margin="506,289,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label Content="Необработанные&#xA;" HorizontalAlignment="Left" Margin="506,256,0,0" VerticalAlignment="Top" Height="28"/>
+
+    </Grid>
+</Window>
